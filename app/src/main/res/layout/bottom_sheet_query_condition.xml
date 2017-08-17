@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/addres_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/bottom_sheet_title"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_gravity="center_horizontal">
+
+            <ListView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="300dp"
+                android:id="@+id/lv_bs_main"
+                android:divider="#fff"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:dividerHeight="1dp"
+                android:choiceMode="singleChoice" />
+
+
+            <ListView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="300dp"
+                android:id="@+id/lv_bs_sub"
+                android:layout_gravity="center"
+                android:divider="@color/gray_light"
+                android:dividerHeight="1dp"
+                android:choiceMode="singleChoice" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

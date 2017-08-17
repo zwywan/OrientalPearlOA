@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/cb_status"
+        android:layout_gravity="center_vertical"
+        android:checked="false"
+        android:button="@drawable/btn_check"
+        android:textColorHighlight="@color/colorAccentLib"
+        android:layout_height="wrap_content" >
+    </CheckBox>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="编号"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_title"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@color/main_page_blue_light_pressed"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="公出预算"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_money"
+                android:textSize="12sp" android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:text="提交时间"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_time"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

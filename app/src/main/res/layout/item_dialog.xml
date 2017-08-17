@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView android:layout_width="300dp"
+        android:text="选择图片"
+        android:textSize="20dp"
+        android:textColor="#333"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_height="60dp"/>
+    <View android:layout_width="400dp"
+        android:background="#d9d9d9"
+        android:layout_height="2px"/>
+    <TextView android:layout_width="300dp"
+        android:clickable="true"
+        android:id="@+id/dialog_tv_photo1"
+        android:text="相册"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="50dp"/>
+    <View android:layout_width="400dp"
+        android:background="#d9d9d9"
+        android:layout_height="2px"/>
+
+    <TextView android:layout_width="300dp"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:text="相机"
+        android:clickable="true"
+        android:id="@+id/dialog_tv_takephoto1"
+        android:layout_height="50dp"/>
+
+    <View android:layout_width="400dp"
+        android:background="#d9d9d9"
+        android:layout_height="2px"/>
+    <TextView android:layout_width="400dp"
+        android:id="@+id/dialog_tv_nagetive"
+        android:text="取消"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_height="60dp"/>
+    <View android:layout_width="400dp"
+        android:background="#d9d9d9"
+        android:layout_height="2px"/>
+
+
+</LinearLayout>
+

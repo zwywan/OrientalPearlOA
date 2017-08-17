@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/login_top"
+        android:background="@mipmap/ic_login_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:background="@mipmap/ic_login_top_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/login_ll"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="262dp"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_login_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/login_en_username"
+                    android:background="#00ffffff"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:hint="用户名"
+                    android:lines="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2.5dp"
+                android:layout_width="262dp"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/login__ed_password"
+                    android:background="#00ffffff"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:password="true"
+                    android:hint="密码"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="262dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="13sp"
+                    android:button="@drawable/login_btn_check"
+                    android:id="@+id/login_cb_savepassword"
+                    android:text=" 记住密码"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="13sp"
+                    android:button="@drawable/login_btn_check"
+                    android:text=" 自动登录"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/login_btn_login"
+                android:textColor="@color/pressed_blue_white"
+                android:background="@drawable/selector_bg_login_button"
+                android:textSize="15sp"
+                android:text="登录"
+                android:layout_width="262dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/login_pb"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/ic_login_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

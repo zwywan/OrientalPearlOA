@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F4F4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.geely.app.geelyapprove.common.view.HandToolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/reader_ll_ss"
+        android:layout_below="@+id/toolbar"
+        android:background="#fff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.SearchView
+            android:layout_margin="10dp"
+            android:id="@+id/et_search"
+            android:layout_width="355dp"
+            android:layout_height="25dp"
+            android:background="@drawable/bg_grey"
+            android:ellipsize="start"
+            android:focusable="false"
+            android:layout_gravity="center"
+            android:hint="搜索"
+            android:foregroundGravity="center_horizontal|center"
+            android:gravity="center"
+            app:searchIcon="@mipmap/ic_search"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            app:queryHint="搜索"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/reader_ll_ss"
+        android:layout_above="@+id/person_list_bottom"
+        android:orientation="vertical"
+        android:dividerHeight="0dp"
+        android:id="@+id/journal_receiver_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reader_ll_ss"
+        android:layout_above="@+id/person_list_bottom"
+        android:layout_width="20dp"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_centerInParent="true"
+            android:id="@+id/person_list_lv"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_list_bottom"
+        android:background="@drawable/btn_bg_white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColor="#359DF5"
+            android:text="已选择："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColor="#359DF5"
+            android:layout_toRightOf="@+id/tv"
+            android:id="@+id/attention_person_list_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/attention_person_btn"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/selector_textcolor"
+            android:background="@drawable/selector_bg_login_button"
+            android:layout_width="77dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/journal_receiver_pb"
+        android:layout_below="@+id/toolbar"
+        android:background="#11ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

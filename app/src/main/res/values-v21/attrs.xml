@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HandInputGroup">
+        <attr name="groupTitle" format="string" />
+        <attr name="oldBarCode" format="string" />
+        <attr name="drawable" format="string"/>
+        <attr name="drawabe" format="string"/>
+        <attr name="hasExpandableButton" format="boolean" />
+        <attr name="isopen" format="boolean" />
+        <attr name="rl" format="boolean" />
+        <attr name="hasDeleteButton" format="boolean"/>
+        <attr name="groupBottomDrawable" format="reference" />
+        <attr name="titleEntries" format="reference" />
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLib">#053686</color>
+    <color name="colorPrimaryDarkLib">#053686</color>
+    <color name="colorAccentLib">#0067ae</color>
+    <color name="main_page_green">#58a9be</color>
+    <color name="main_page_blue_light">#69a9d5</color>
+    <color name="main_page_blue_light_pressed">#588db1</color>
+    <color name="main_page_blue_dark">#1562a3</color>
+    <color name="white">#ffffff</color>
+    <color name="line_gray">#d4d4d4</color>
+    <color name="gray_dark">@android:color/darker_gray</color>
+    <color name="gray">#CDCDCD</color>
+    <color name="blue">#325f8f</color>
+    <color name="gray_light">#eaedec</color>
+    <color name="black">@android:color/black</color>
+    <color name="blue_dark">#435790</color>
+    <color name="blue_light">#6f8fba</color>
+    <color name="bg_list_gray">#fafafa</color>
+    <color name="yellow_dark">#f4c539</color>
+    <color name="main_page_blue_dark_pressed">#104b7e</color>
+    <color name="main_page_green_pressed">#488b9c</color>
+    <color name="homepage_color_gray">#f7f6f6</color>
+    <color name="bottom_bar_grad_start">#7190bc</color>
+    <color name="bottom_bar_grad_mid">#5278a8</color>
+    <color name="bottom_bar_grad_end">#475b93</color>
+    <color name="radio_btn">#0967ae</color>
+    <color name="add">#346497</color>
+    <color name="alert">#ff0000</color>
+    <color name="window_background">#f2f1f0</color>
+    <color name="group_title_color">#e4ebf4</color>
+    <color name="windows_translucent_background">#7f000000</color>
+    <color name="list_view_name">#4276BB</color>
+    <color name="list_view_type">#063785</color>
+    <color name="history_approved_color">#6ABB66</color>
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="j_wheel_timebtn_nor">#54a3fa</color>
+    <color name="j_wheel_timebtn_pre">#CCCCCC</color>
+</resources>

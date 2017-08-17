@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/window_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/sublist_item_barcode"
+            tools:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_white_stroke_blue_round"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_delete"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_white_stroke_blue_round"
+            android:id="@+id/sublist_item_delete" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我方参加招待人"
+            android:textColor="#858E99"
+            android:textSize="14sp"
+            android:id="@+id/tv_title"
+            android:maxEms="6"
+            android:minEms="6"
+            android:gravity="left" />
+
+        <TextView
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/indicator_must_have"
+            android:text="*"
+            android:textSize="14sp"
+            android:textColor="@color/alert" />
+
+        <EditText
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_value"
+            android:minHeight="10dp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:text="@string/app_name"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:gravity="top|left" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#DFDFDF"
+        android:id="@+id/divider"
+        android:layout_height="0.5dp" />
+
+</LinearLayout>

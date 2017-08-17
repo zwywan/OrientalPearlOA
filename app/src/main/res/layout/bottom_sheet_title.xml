@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/rec_normal_gray"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="@dimen/pickerview_topbar_btn_textsize"
+        android:textColor="@drawable/selector_pickerview_btn"
+        android:id="@+id/btn_cancel"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:text="筛选条件"
+        android:id="@+id/tv_bs_title"
+        android:layout_weight="5"
+        android:textSize="@dimen/pickerview_topbar_title_textsize"
+        android:textColor="@color/pickerview_topbar_title"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textSize="@dimen/pickerview_topbar_btn_textsize"
+        android:textColor="@drawable/selector_pickerview_btn"
+        android:id="@+id/btn_confirm"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

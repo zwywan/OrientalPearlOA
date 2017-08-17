@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="item_elevation">4dp</dimen>
+    <dimen name="halving_line">2dp</dimen>
+    <dimen name="circle_round_padding">10dp</dimen>
+    <dimen name="radio_buttons_padding">7dp</dimen>
+    <dimen name="list_item_halving">10dp</dimen>
+    <dimen name="toolbar_padding">14dp</dimen>
+    <dimen name="list_small_divider_height">0.5dp</dimen>
+    <dimen name="list_large_divider_height">1dp</dimen>
+    <dimen name="hand_horizontal_scroll_content_size">11sp</dimen>
+    <dimen name="hand_horizontal_scroll_time_size">10sp</dimen>
+    <dimen name="hand_horizontal_scroll_item_margin">10dp</dimen>
+    <dimen name="post_flow_item_button_padding">6dp</dimen>
+    <dimen name="post_flow_item_button_margin">1dp</dimen>
+    <dimen name="post_flow_item_button_text_size">10sp</dimen>
+    <dimen name="post_flow_page_title_drawable_padding">5dp</dimen>
+    <dimen name="main_list_item_text_size">13sp</dimen>
+    <dimen name="main_list_item_padding_inside">5dp</dimen>
+    <dimen name="list_padding">0dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+
+    <!-- 收款地址顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 收款地址顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 收款地址顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 收款地址顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <!-- 收款地址选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/llayout_bottom_buttons_bar"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Reject"
+        android:id="@+id/btn_reject"
+        android:enabled="false"
+        android:visibility="gone"
+        android:textColor="#e94546"
+        android:drawableStart="@drawable/ic_reject"
+        android:drawableLeft="@drawable/ic_reject"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/rec_normal_gray" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:id="@+id/btn_approve"
+        android:drawableLeft="@drawable/ic_approve"
+        android:drawableStart="@drawable/ic_approve"
+        android:textColor="#579257"
+        android:background="@drawable/rec_normal_gray"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="批准"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="#3a699b"
+        android:id="@+id/btn_toother"
+        android:drawableLeft="@drawable/ic_transfer"
+        android:drawableStart="@drawable/ic_transfer"
+        android:background="@drawable/rec_normal_gray"
+        android:text="转办"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="提交"
+        android:id="@+id/btn_start"
+        android:enabled="false"
+        android:visibility="gone"
+        android:textColor="#569556"
+        android:drawableStart="@drawable/ic_start"
+        android:drawableLeft="@drawable/ic_start"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/rec_normal_gray" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:id="@+id/btn_save"
+        android:drawableLeft="@drawable/ic_save"
+        android:drawableStart="@drawable/ic_save"
+        android:textColor="#3a699b"
+        android:background="@drawable/rec_normal_gray"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="保存"
+        android:visibility="gone" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:id="@+id/btn_again"
+        android:drawableLeft="@drawable/anew_new"
+        android:drawableStart="@drawable/anew_new"
+        android:textColor="#569556"
+        android:background="@drawable/rec_normal_gray"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="重新提交"
+        android:visibility="gone" />
+
+</LinearLayout>

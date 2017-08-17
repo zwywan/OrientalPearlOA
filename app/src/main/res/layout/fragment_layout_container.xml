@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout_item_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f1f0">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llayout_bottom_buttons_bar"
+        android:orientation="vertical">
+
+        <com.geely.app.geelyapprove.common.view.HandToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.geely.app.geelyapprove.common.view.RadioBarViewPager
+            android:id="@+id/rb_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/frag_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/window_background"
+            android:divider="@null"
+            android:dividerHeight="@dimen/list_item_halving"
+            android:layoutAnimation="@anim/list_item_in"
+            android:visibility="visible">
+        </android.support.v7.widget.RecyclerView>
+
+        <include
+            android:id="@+id/vs_action_buttons"
+            layout="@layout/layout_hand_group_bottom_buttons_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/vs_empty"
+        layout="@layout/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <RelativeLayout
+        android:id="@+id/frag_pb"
+        android:background="#00ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

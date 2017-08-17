@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+    <com.geely.app.geelyapprove.common.view.HandToolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fl_container"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lib_pb"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/image"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CBCBCB"
+        android:layout_above="@+id/bottom_bar"/>
+
+    <RadioGroup
+        android:visibility="gone"
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_main_todo"
+            style="@style/BottomBarItem"
+            android:checked="true"
+            android:enabled="false"
+            android:drawableTop="@drawable/home_page_radio_button_my_comm"
+            android:text="@string/to_do_list" />
+
+        <RadioButton
+            android:id="@+id/rb_main_start"
+            style="@style/BottomBarItem"
+            android:enabled="false"
+            android:drawableTop="@drawable/home_page_radio_button_my_launch"
+            android:textAppearance="?attr/selectableItemBackground"
+            android:text="@string/my_request" />
+
+        <!--<RadioButton
+            android:id="@+id/rb_main_tome"
+            style="@style/BottomBarItem"
+            android:drawableTop="@drawable/home_page_radio_button_cc_me"
+            android:text="抄送给我" />-->
+
+        <RadioButton
+            android:enabled="false"
+            android:id="@+id/rb_main_new"
+            style="@style/BottomBarItem"
+            android:drawableTop="@drawable/home_page_radio_button_post_flow"
+            android:text="@string/add_request" />
+    </RadioGroup>
+
+
+</RelativeLayout>

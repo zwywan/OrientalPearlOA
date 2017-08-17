@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="15sp"
+            android:id="@+id/iv_arrow"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_down"
+            android:layout_height="15sp" />
+
+        <ProgressBar
+            android:layout_width="13sp"
+            android:layout_gravity="center"
+            android:id="@+id/pb_rotate"
+            android:visibility="gone"
+            android:interpolator="@android:anim/overshoot_interpolator"
+            android:layout_height="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="加载中……"
+            android:textColor="@color/blue_light"
+            android:id="@+id/tv_state"
+            android:textSize="13sp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_time"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

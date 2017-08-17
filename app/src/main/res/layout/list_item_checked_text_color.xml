@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:text="@string/app_name"
+    android:textSize="13sp"
+    android:paddingLeft="@dimen/main_list_item_text_size"
+    android:textColor="@color/checked_blue_gray" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="oval" android:useLevel="false">
+            <stroke android:color="@color/colorPrimaryLib" android:width="2dp" />
+            <size android:width="100dp" android:height="100dp"/>
+            <padding android:bottom="@dimen/circle_round_padding" android:left="@dimen/circle_round_padding" android:right="@dimen/circle_round_padding" android:top="@dimen/circle_round_padding"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:drawableTop="@drawable/ic_flow_gc"
+    android:text="公出"
+    android:textSize="@dimen/post_flow_item_button_text_size"
+    android:drawablePadding="5dp"
+    android:textColor="@color/checked_blue_gray"
+    android:padding="@dimen/post_flow_item_button_padding"
+    android:background="@color/white"
+    android:layout_marginRight="@dimen/post_flow_item_button_margin"
+    android:layout_height="wrap_content" />

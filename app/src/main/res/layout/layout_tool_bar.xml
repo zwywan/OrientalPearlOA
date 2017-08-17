@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0067AE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_left"
+            android:textColor="@color/white"
+            android:text="@string/back"
+            android:textSize="18sp"
+            tools:visibility="visible"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItemSmall"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:visibility="visible"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/to_do_list"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical">
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:drawablePadding="5dp"
+                android:visibility="invisible"
+                android:textColor="@color/white"
+                android:drawableRight="@mipmap/approval_histoy_button_new"
+                android:layout_marginRight="5dp"
+                android:textAppearance="?attr/textAppearanceListItemSmall"
+                android:background="?android:attr/selectableItemBackground" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/ic_home_back"
+                tools:visibility="visible"
+                android:textAppearance="?attr/textAppearanceListItemSmall"
+                android:background="?android:attr/selectableItemBackground" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

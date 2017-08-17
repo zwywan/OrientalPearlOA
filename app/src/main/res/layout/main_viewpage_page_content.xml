@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.geely.app.geelyapprove.common.view.SimpleListView
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager_listview"
+        android:divider="@null"
+        android:paddingLeft="@dimen/main_list_item_padding_inside"
+        android:paddingRight="@dimen/main_list_item_padding_inside"
+        android:smoothScrollbar="true"
+        android:scrollbarSize="4dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/rec_round_blue_dark"
+        android:dividerHeight="@dimen/main_list_item_padding_inside"
+        android:layoutAnimation="@anim/list_item_in"
+        android:fastScrollEnabled="false"
+        android:choiceMode="singleChoice"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/iv_empty"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_logo_geely"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/mycommission_pb"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
