@@ -50,20 +50,25 @@ public class DisplayUnified extends CommonFragment {
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
+                            setPb(false);
                             if (entity != null && entity.getRetData() != null) {
                                 if (entity.getCode().equals("100")) {
                                     bean = entity.getRetData();
                                     setEntity(bean);
                                     setGroup(getGroupList());
-                                    setPb(false);
                                     setButtonllEnable(true);
                                     setDisplayTabs(true);
                                     notifyDataSetChanged();
                                     return;
+                                }else {
+                                    setPb(false);
+                                    setButtonllEnable(false);
+                                    Toast.makeText(getActivity(), entity.getMsg(), Toast.LENGTH_SHORT).show();
+                                    getActivity().finish();
                                 }
                             } else {
-
                                 Toast.makeText(getActivity(), entity.getMsg(), Toast.LENGTH_SHORT).show();
+                                getActivity().finish();
 
                             }
                         }
@@ -170,12 +175,17 @@ public class DisplayUnified extends CommonFragment {
                         if (auditNodeBean.getStatus().equals("2") && auditNodeBean.getNameEN().equals(listValue.get(i).getWhichPageDisplay()) && GeelyApp.getLoginEntity().getRetData().getUserInfo().getNameCN().equals(auditNodeBean.getApprovers().split("\\(")[0])){
                             holderList.add(holder);
                             break;
-                        }else if (auditNodeBean.getStatus().equals("1") && auditNodeBean.getNameEN().equals(listValue.get(i).getWhichPageDisplay()) && GeelyApp.getLoginEntity().getRetData().getUserInfo().getNameCN().equals(auditNodeBean.getApprovers().split("\\(")[0])){
-                            holder.setType(HandInputGroup.VALUE_TYPE.TEXT);
-                            holder.setHasIndicator(true);
-                            holderList.add(holder);
-                            break;
                         }
+
+                        /**
+                         * 特殊节点审批后审批人查看可见逻辑
+                         */
+//                        else if (auditNodeBean.getStatus().equals("1") && auditNodeBean.getNameEN().equals(listValue.get(i).getWhichPageDisplay()) && GeelyApp.getLoginEntity().getRetData().getUserInfo().getNameCN().equals(auditNodeBean.getApprovers().split("\\(")[0])){
+//                            holder.setType(HandInputGroup.VALUE_TYPE.TEXT);
+//                            holder.setHasIndicator(true);
+//                            holderList.add(holder);
+//                            break;
+//                        }
                     }
                 }
 
